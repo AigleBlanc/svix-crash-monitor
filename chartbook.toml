@@ -1,0 +1,10 @@
+[project]
+name = "SVIX Crash Monitor (history)"
+description = "Daily 30-day SVIX and option-implied probabilities of a 10% and 20% drop in the S&P 500 within a month."
+
+[dataframes.svix_monitor_history]
+name = "SVIX Monitor History"
+description = "One row per E-mini S&P 500 option session: the 30-day SVIX, the VIX, and the probabilities of a 10% and 20% drop within a month under risk-neutral, log-utility and power-utility beliefs."
+path = "svix_monitor_history.csv"
+date_col = "date"
+docs = "One row per session, oldest first. svix_30 is the 30-day SVIX in VIX units; vix is the Cboe VIX close; p_star_20, p_log_20 and p_power_20 are the probabilities of a 20% drop under risk-neutral, log-utility and power-utility beliefs."
